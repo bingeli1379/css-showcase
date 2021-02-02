@@ -1,6 +1,6 @@
 <template>
-  <div class="container px-4 mx-auto">
-    <h1 class="text-4xl font-bold text-white text-center pt-4 pb-20">
+  <div class="min-h-screen container px-4 mx-auto">
+    <h1 class="text-6xl font-bold text-white text-center py-20">
       CSS Showcase
     </h1>
     <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 text-center">

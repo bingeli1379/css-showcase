@@ -1,0 +1,38 @@
+.slide-enter-active,
+.slide-leave-active {
+  transition: left 0.5s;
+}
+
+.slide-enter {
+  position: relative;
+  left: -100%;
+}
+
+.slide-enter-to,
+.slide-leave {
+  position: relative;
+  left: 0;
+}
+
+.slide-leave-to {
+  position: relative;
+  left: 100%;
+}
+
+.swipe-enter-active,
+.swipe-leave-active {
+  transition: transform 0.5s;
+}
+
+.swipe-enter,
+.swipe-leave-to {
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.swipe-enter-to,
+.swipe-leave {
+  transform-origin: top;
+  transition-delay: 1.2s;
+  transform: scaleY(1);
+}

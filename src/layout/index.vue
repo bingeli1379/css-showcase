@@ -1,9 +1,9 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="overflow-hidden">
     <Header />
-    <div class="flex-grow h-0">
+    <transition name="slide" mode="out-in">
       <router-view />
-    </div>
+    </transition>
   </div>
 </template>
 

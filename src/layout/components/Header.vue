@@ -1,7 +1,14 @@
 <template>
-  <a v-if="show" class="block bg-white py-2" href="#" @click.prevent="back">
-    back
-  </a>
+  <transition name="swipe">
+    <a
+      v-if="show"
+      class="block absolute top-0 right-0 left-0 bg-white text-center py-2"
+      href="#"
+      @click.prevent="back"
+    >
+      back / 回去 / 回上一頁 / 給我回去上一頁拉！
+    </a>
+  </transition>
 </template>
 
 <script>
