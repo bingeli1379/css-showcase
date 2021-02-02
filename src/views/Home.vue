@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container px-4 mx-auto">
+    <h1 class="text-4xl font-bold text-white text-center pt-4 pb-20">
+      CSS Showcase
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 text-center">
+      <div v-for="data of datalist" :key="data.id">
+        <router-link :to="{ name: data.linkName }" class="block text-xl bg-white text-black rounded-lg py-4">
+          {{ data.text }}
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      datalist: [
+        {
+          linkName: 'Hollow',
+          text: '疝氣a簍空字體'
+        }
+      ]
+    }
   }
 }
 </script>
